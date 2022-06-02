@@ -1,7 +1,7 @@
 # Alex Abair, 2022-06-02
 # This script takes an iNaturalist username as input and generates some stats about their photos.
 # It gives a total number of photos uploaded by a user (if they haven't made over 10,000 observations).
-# It also gives you the averaage number of photos per observation and the rate of photo uploads over days, weeks, months, and years.
+# It also gives you the average number of photos per observation and the rate of photo uploads over days, weeks, months, and years.
 
 # Importing packages
 import os
