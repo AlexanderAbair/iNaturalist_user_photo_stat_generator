@@ -141,7 +141,7 @@ if int(totalObs) >= 10000:
         results2 = "\n  This user uploaded" + str(photoCount) + "for their last 10k observations (" + str(avePhotosPerObservation) + ") per observation."
 results3 = "\n  @" + iNatUser + " has uploaded an average of " + photosPerDay + " photos per day since " + userStartDate + ".\n\n\n"
 if int(totalObs) >= 10000:
-        results3 = ""
+        results3 = "\n\n\n"
 elif int(str(photosPerDay)[0]) == 0:
         results3 = "\n  @" + iNatUser + " has uploaded an average of " + photosPerWeek + " photos per week since " + userStartDate + ".\n\n\n"
         if int(str(photosPerWeek)[0]) == 0:
@@ -153,7 +153,7 @@ elif int(str(photosPerDay)[0]) == 0:
 
 if int(totalObs) >= 10000:
         with open(fileName, 'w') as f:
-                f.write('\n  Infomation about photo upload rate by iNaturalist user @' + iNatUser + '.\n  View their profile here: https://www.inaturalist.org/people/' + iNatUser + '\n\n  The user @' + iNatUser + ' submitted ' + str(photoCount) + ' photos to iNaturalist.org as of ' + str(date.today()) + '.\n  This user uploaded' + str(photoCount) + 'photos for their last 10k observations (' + str(avePhotosPerObservation) + ' per observation.)')
+                f.write('\n  Infomation about photo upload rate by iNaturalist user @' + iNatUser + '.\n  View their profile here: https://www.inaturalist.org/people/' + iNatUser + '\n\n  The user @' + iNatUser + ' submitted ' + str(photoCount) + ' photos to iNaturalist.org as of ' + str(date.today()) + '.\n  This user uploaded' + str(photoCount) + 'photos for their last 10k observations (' + str(avePhotosPerObservation) + ' per observation.)\n\n\n')
 else:
         with open(fileName, 'w') as f:
                 f.write('\n  Infomation about photo upload rate by iNaturalist user @' + iNatUser + '.\n  View their profile here: https://www.inaturalist.org/people/' + iNatUser + '. ' + results1 + results2 + results3 )
