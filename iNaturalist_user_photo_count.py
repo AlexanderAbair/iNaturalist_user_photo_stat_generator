@@ -138,7 +138,7 @@ results2 = "\n  They've made " + str(totalObs) + " observations with an average 
 if str(avePhotosPerObservation) == '1.00':
         results2 = "\n  They've made " + str(totalObs) + " observations with an average of one photo per observation."
 if int(totalObs) >= 10000:
-        results2 = "\n  This user uploaded" + str(photoCount) + "for their last 10k observations (" + str(avePhotosPerObservation) + ") per observation."
+        results2 = "\n  This user uploaded " + str(photoCount) + " for their last 10k observations (" + str(avePhotosPerObservation) + " per observation)."
 results3 = "\n  @" + iNatUser + " has uploaded an average of " + photosPerDay + " photos per day since " + userStartDate + ".\n\n\n"
 if int(totalObs) >= 10000:
         results3 = "\n\n\n"
